@@ -30,14 +30,14 @@ function Spammer({ updateFreq, children }) {
 function App() {
   return (
     <div className="App">
-      <Spammer updateFreq={0.1}>
+      <Spammer updateFreq={100}>
         {({ count }) => (
           <>
             {/* <NBSlow /> */}
             {/* <NBSlowMemo /> */}
 
-            {/* {listMe(100, <NBFast />)} */}
-            {listMe(100, <NBFastMemo />)}
+            {/* {listMe(1800, <NBFast />)} */}
+            {listMe(2500, <NBFastMemo />)}
 
             {/* <NBCount /> */}
             {/* <NBCountMemo /> */}
